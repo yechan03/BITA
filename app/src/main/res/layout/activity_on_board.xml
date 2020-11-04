@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="clickHandler"
+            type="com.david0926.scon.screen.onboard.OnBoardActivity.OnBoardActivityClickHandler" />
+
+        <variable
+            name="viewModel"
+            type="com.david0926.scon.screen.onboard.OnBoardViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColorPrimary">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="107dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="34dp"
+                android:src="@drawable/app_icon_typo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView10"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanskr_bold"
+                android:onClick="@{() -> clickHandler.btnFinishClick()}"
+                android:paddingHorizontal="34dp"
+                android:paddingVertical="24dp"
+                android:text="@string/on_board_skip"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
+                app:bindInvisibility="@{viewModel.currentPage &lt; 3}"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager_on_board"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:bindPagerCallback="@{viewModel.pagerCallback}"
+            app:bindPagerCurrentItem="@{viewModel.pageChangeRequest}"
+            app:layout_constraintBottom_toTopOf="@+id/imageView6"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_on_board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:clickable="false"
+            android:focusable="false"
+            app:bindTabMediator="@{pagerOnBoard}"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pager_on_board"
+            app:tabBackground="@drawable/selector_on_board_indicator"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"
+            app:tabPaddingBottom="0dp"
+            app:tabPaddingEnd="16dp"
+            app:tabPaddingStart="0dp"
+            app:tabPaddingTop="0dp" />
+
+        <Button
+            android:id="@+id/imageView6"
+            style="@style/ButtonStyleColored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="34dp"
+            android:layout_marginBottom="34dp"
+            android:onClick="@{() -> clickHandler.btnFinishClick()}"
+            android:text="@string/on_board_start"
+            app:bindInvisibility="@{viewModel.currentPage == 3}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tint="@android:color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

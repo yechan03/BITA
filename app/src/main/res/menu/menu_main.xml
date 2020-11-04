@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_1"
+        android:icon="@drawable/ic_round_chat_24"
+        android:title="@string/menu_main_chat" />
+    <item
+        android:id="@+id/action_2"
+        android:icon="@drawable/ic_round_person_24"
+        android:title="@string/menu_main_profile" />
+    <item
+        android:id="@+id/action_3"
+        android:icon="@drawable/ic_round_more_horiz_24"
+        android:title="@string/menu_main_more" />
+
+</menu>

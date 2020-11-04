@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: gun0912.ted:tedkeyboardobserver:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8136d349223ade6592bfe5edbbf36a30/jetified-tedkeyboardobserver-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8136d349223ade6592bfe5edbbf36a30/jetified-tedkeyboardobserver-1.0.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/gun0912.ted/tedkeyboardobserver/1.0.2/82084f239f1b20038117adc2763530d49c526e60/tedkeyboardobserver-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/gun0912.ted/tedkeyboardobserver/1.0.2/52a09fbab4b863d16f14472b4f9342b47f690a38/tedkeyboardobserver-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

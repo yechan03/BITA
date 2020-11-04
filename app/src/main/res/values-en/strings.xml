@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">SSF2020</string>
+
+    <string name="splash_phrase">2020 SSF chat app develop class</string>
+
+    <string name="on_board_1_title">No contact,</string>
+    <string name="on_board_1_sub">Use your chat app</string>
+    <string name="on_board_1_text">With Sunrin 2020 SSF,
+        \nLet\'s make real-time chatting app!</string>
+
+    <string name="on_board_2_title">Step One</string>
+    <string name="on_board_2_sub">Login &amp; Register</string>
+    <string name="on_board_2_text">Develop login &amp; register feature,
+        \nusing Firebase Authentication.
+        </string>
+
+    <string name="on_board_3_title">Step Two</string>
+    <string name="on_board_3_sub">Real-time Chat</string>
+    <string name="on_board_3_text">Develop realtime multi-chatting feature
+        \nusing Cloud Firestore and Storage.
+        </string>
+
+    <string name="on_board_4_title">So then,</string>
+    <string name="on_board_4_sub">Ready to develop?</string>
+    <string name="on_board_4_text">2020 SSF ✕ EDCAN
+        \nChat app class, Let\'s get started!</string>
+
+    <string name="on_board_skip">Skip</string>
+    <string name="on_board_start">Get Started</string>
+
+    <string name="error_empty_field">Please fill all required fields.</string>
+    <string name="error_password_invalid">Please enter a valid password.</string>
+    <string name="error_no_user_data">User data does not exist.</string>
+    <string name="error_no_user_account">User account does not exist.</string>
+    <string name="error_user_account_taken">This email address is already taken.</string>
+    <string name="error_email_invalid">Please enter a valid email address.</string>
+    <string name="error_password_invalid_case">Please enter a valid password. (6~24 letters, 0–9 + A-z)</string>
+    <string name="error_password_different">Please enter same password in both fields.</string>
+    <string name="error_no_internet">Please check your internet condition.</string>
+    <string name="error_image_invalid_type">Please upload valid profile image. (jpeg, png)</string>
+    <string name="error_user_data_upload_failed">Failed to upload user data.</string>
+    <string name="error_user_create_failed">Failed to sign up.</string>
+    <string name="error_profile_logged_out">Couldn\'t load user data; Please skip profile setting.</string>
+    <string name="error_user_info_update_failed">Failed to update user data.</string>
+    <string name="error_image_upload_failed">Failed to upload image.</string>
+    <string name="error_image_url_failed">Failed to get image address.</string>
+
+    <string name="login_title">Hi there!</string>
+    <string name="login_text">Sign in, and go forth to chat!</string>
+    <string name="login_email">Email</string>
+    <string name="login_pw">Password</string>
+    <string name="login_login">Sign in</string>
+    <string name="login_text_register">Don\'t have account yet? Sign up here.</string>
+    <string name="login_register">Sign up</string>
+    <string name="login_forgot_pw">Forgot password?</string>
+    <string name="login_loading">Signing in…</string>
+    <string name="login_success">Successfully signed in!</string>
+
+    <string name="register_skip">Skip</string>
+    <string name="register_next">Next</string>
+    <string name="register_text_name_email">Let us know your \nname and email</string>
+    <string name="register_name">Name</string>
+    <string name="register_email">Email</string>
+    <string name="register_text_pw">Create your \npassword</string>
+    <string name="register_pw">Password</string>
+    <string name="register_pw_confirm">Confirm Password</string>
+    <string name="register_text_profile_introduce">Upload your \nprofile and introduction</string>
+    <string name="register_introduce">20-letters introduce yourself</string>
+    <string name="register_finish">Finish</string>
+
+    <string name="register_email_check">Validating email…</string>
+    <string name="register_email_check_success">Email confirmed!</string>
+    <string name="register_signing">Creating user…</string>
+    <string name="register_success">User successfully created!</string>
+    <string name="register_skip_profile">Skip profile setting?</string>
+    <string name="register_cancel">Cancel</string>
+
+    <string name="register_pw_rule">(6~24 letters, A~z + 0~9)</string>
+    <string name="register_profile_uploading">Uploading profile…</string>
+    <string name="register_profile_upload_success">Upload success!</string>
+    <string name="error_send_chat_failed">Failed to send message.</string>
+    <string name="main_1_chat">Chat</string>
+    <string name="main_1_title">Start Chatting</string>
+    <string name="main_1_description">Join channel, \nstart chatting with others!</string>
+    <string name="main_1_enter">Join Channel</string>
+    <string name="main_2_profile">Profile</string>
+    <string name="main_2_edit_profile">Edit profile</string>
+    <string name="main_3_class_name">SSF 2020 Chat App Class</string>
+    <string name="main_3_dev_info">Developer info</string>
+    <string name="main_3_club_info">About our club</string>
+    <string name="main_3_license">Open source license</string>
+    <string name="main_3_logout">Logout</string>
+    <string name="main_3_more">More</string>
+    <string name="menu_main_chat">Chat</string>
+    <string name="menu_main_profile">Profile</string>
+    <string name="menu_main_more">More</string>
+
+    <string name="chat_title">Chat</string>
+    <string name="edit_profile_complete">Profile successfully updated!</string>
+    <string name="edit_profile_title">Edit profile</string>
+    <string name="edit_profile_save">Save</string>
+
+    <string name="reset_pw_success">Successfully sent!</string>
+    <string name="reset_pw_send">Send reset email</string>
+    <string name="reset_pw_description">Enter your email \nyou used at registration</string>
+    <string name="reset_pw_title">Reset password</string>
+
+</resources>
