@@ -6,7 +6,11 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd9d1487-d555-4a89-8ee8-2c2fae75cb01" name="Default Changelist" comment="" />
+    <list default="true" id="dd9d1487-d555-4a89-8ee8-2c2fae75cb01" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/david0926/scon/screen/personalitytype/PersonalityTestActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/david0926/scon/screen/personalitytype/PersonalityTestActivity.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +75,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
@@ -177,6 +184,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="365" y="275" key="#PSD" timestamp="1604466865039">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="365" y="275" key="#PSD/0.23.1680.1027@0.23.1680.1027" timestamp="1604466865039" />
     <state x="158" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604464462793">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
