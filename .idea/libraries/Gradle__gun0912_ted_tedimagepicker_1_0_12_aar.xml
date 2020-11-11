@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a20eb733b5cbef1fa9c135eb819c31f5/jetified-tedimagepicker-1.0.12/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a20eb733b5cbef1fa9c135eb819c31f5/jetified-tedimagepicker-1.0.12/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a20eb733b5cbef1fa9c135eb819c31f5/jetified-tedimagepicker-1.0.12/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/gun0912.ted/tedimagepicker/1.0.12/9d9dc5060223882938832116fa0f3273e17f7790/tedimagepicker-1.0.12-javadoc.jar!/" />
