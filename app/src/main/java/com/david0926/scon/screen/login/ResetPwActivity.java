@@ -5,7 +5,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.david0926.scon.R;
 import com.david0926.scon.databinding.ActivityResetPwBinding;
@@ -24,7 +24,7 @@ public class ResetPwActivity extends AppCompatActivity {
         binding.setLifecycleOwner(this);
         binding.setClickHandler(new ResetPwActivityClickHandler());
 
-        viewModel = ViewModelProviders.of(this).get(ResetPwActivityViewModel.class);
+        viewModel = new ViewModelProvider(this).get(ResetPwActivityViewModel.class);
         binding.setViewModel(viewModel);
 
         viewModel.email.observe(this, s -> checkSendEnabled());

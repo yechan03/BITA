@@ -5,7 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.david0926.scon.R;
 import com.david0926.scon.databinding.ActivityRegisterBinding;
@@ -25,7 +25,7 @@ public class RegisterActivity extends AppCompatActivity {
         binding.setLifecycleOwner(this);
         binding.setClickHandler(new RegisterActivityClickHandler());
 
-        viewModel = ViewModelProviders.of(this).get(RegisterViewModel.class);
+        viewModel = new ViewModelProvider(this).get(RegisterViewModel.class);
         binding.setViewModel(viewModel);
 
         viewModel.currentPage.setValue(getIntent().getIntExtra("register_page", 0));

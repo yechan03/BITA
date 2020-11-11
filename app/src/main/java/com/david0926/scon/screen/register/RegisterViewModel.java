@@ -107,5 +107,6 @@ public class RegisterViewModel extends ViewModel {
 
     public MutableLiveData<Uri> profile = new MutableLiveData<>();
     public MutableLiveData<String> introduce = new MutableLiveData<>("");
+    public MutableLiveData<String> personality = new MutableLiveData<>("");
 
 }

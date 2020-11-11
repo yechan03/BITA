@@ -5,7 +5,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.david0926.scon.R;
@@ -27,7 +27,7 @@ public class ChatActivity extends AppCompatActivity {
         binding.setLifecycleOwner(this);
         binding.setClickHandler(new ChatActivityClickHandler());
 
-        viewModel = ViewModelProviders.of(this).get(ChatActivityViewModel.class);
+        viewModel = new ViewModelProvider(this).get(ChatActivityViewModel.class);
         binding.setViewModel(viewModel);
 
         binding.recyclerChat.setLayoutManager(new LinearLayoutManagerWrapper(

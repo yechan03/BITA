@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.david0926.scon.R;
 import com.david0926.scon.databinding.ActivityLoginBinding;
@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         binding.setLifecycleOwner(this);
         binding.setClickHandler(new LoginActivityClickHandler());
 
-        viewModel = ViewModelProviders.of(this).get(LoginActivityViewModel.class);
+        viewModel = new ViewModelProvider(this).get(LoginActivityViewModel.class);
         binding.setViewModel(viewModel);
     }
 

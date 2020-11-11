@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.david0926.scon.R;
 import com.david0926.scon.databinding.FragmentRegister1Binding;
@@ -29,7 +29,7 @@ public class Register1Fragment extends Fragment {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_register_1, container, false);
         binding.setLifecycleOwner(this);
 
-        viewModel = ViewModelProviders.of(requireActivity()).get(RegisterViewModel.class);
+        viewModel = new ViewModelProvider(requireActivity()).get(RegisterViewModel.class);
         binding.setViewModel(viewModel);
 
         viewModel.name.observe(getViewLifecycleOwner(), s -> checkNextPageEnabled());

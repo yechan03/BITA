@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.david0926.scon.R;
 import com.david0926.scon.databinding.ActivityEditProfileBinding;
@@ -30,7 +30,7 @@ public class EditProfileActivity extends AppCompatActivity {
         binding.setLifecycleOwner(this);
         binding.setClickHandler(new EditProfileActivityClickHandler());
 
-        viewModel = ViewModelProviders.of(this).get(EditProfileActivityViewModel.class);
+        viewModel = new ViewModelProvider(this).get(EditProfileActivityViewModel.class);
         binding.setViewModel(viewModel);
 
         mUser = UserCache.getUser(this);

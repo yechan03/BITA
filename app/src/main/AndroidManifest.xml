@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.david0926.scon.screen.personalitytype.PersonalityTestActivity"/>
+        <activity android:name="com.david0926.scon.screen.personality.PersonalityActivity"/>
         <activity
             android:name="com.david0926.scon.screen.login.ResetPwActivity"
             android:windowSoftInputMode="adjustResize" />

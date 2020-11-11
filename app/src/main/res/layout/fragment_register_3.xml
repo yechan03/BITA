@@ -28,9 +28,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
                 android:fontFamily="@font/notosanskr_bold"
                 android:text="@string/register_text_profile_introduce"
                 android:textSize="20sp"
+                app:layout_constrainedWidth="true"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -85,6 +88,26 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="16dp"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:hint="@string/register_personality"
+                android:inputType="none"
+                android:maxLength="20"
+                android:onClick="@{()->clickHandler.edtPersonalityClick()}"
+                android:text="@={viewModel.personality}"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText4"
+                app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

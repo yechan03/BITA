@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SSF2020</string>
+    <string name="app_name">BITA</string>
 
     <string name="profile_placeholder" translatable="false">https://raw.githubusercontent.com/roian6/NanumFest2020/master/app/src/main/res/drawable/profile_placeholder.jpg</string>
 
@@ -66,7 +66,7 @@
     <string name="register_text_pw">비밀번호를 \n입력해주세요</string>
     <string name="register_pw">비밀번호</string>
     <string name="register_pw_confirm">비밀번호 확인</string>
-    <string name="register_text_profile_introduce">프로필 사진과 한줄 소개를 \n등록해주세요</string>
+    <string name="register_text_profile_introduce">프로필 사진과 한줄 소개, \n성격 유형을 등록해주세요</string>
     <string name="register_introduce">한줄 소개 (20자 이내)</string>
     <string name="register_finish">완료</string>
     <string name="register_email_check">이메일 중복 확인중…</string>
@@ -110,5 +110,6 @@
     <string name="reset_pw_title">비밀번호 재설정</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register_personality">성격 유형</string>
 
 </resources>

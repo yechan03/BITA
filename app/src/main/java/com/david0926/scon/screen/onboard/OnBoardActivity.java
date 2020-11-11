@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.david0926.scon.R;
 import com.david0926.scon.databinding.ActivityOnBoardBinding;
@@ -25,7 +25,7 @@ public class OnBoardActivity extends AppCompatActivity {
         binding.setLifecycleOwner(this);
         binding.setClickHandler(new OnBoardActivityClickHandler());
 
-        viewModel = ViewModelProviders.of(this).get(OnBoardViewModel.class);
+        viewModel = new ViewModelProvider(this).get(OnBoardViewModel.class);
         binding.setViewModel(viewModel);
 
         OnBoardPagerAdapter adapter = new OnBoardPagerAdapter(this, viewModel.fragments);
