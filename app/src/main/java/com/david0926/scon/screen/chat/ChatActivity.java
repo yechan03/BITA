@@ -20,6 +20,8 @@ public class ChatActivity extends AppCompatActivity {
     private ActivityChatBinding binding;
     private ChatActivityViewModel viewModel;
 
+    private String channel;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,8 +36,12 @@ public class ChatActivity extends AppCompatActivity {
                 this, LinearLayoutManager.VERTICAL, false));
         binding.recyclerChat.setAdapter(new ChatAdapter(UserCache.getUser(this)));
 
-        FirebaseObserveChat.observeMessage(getResources(),
+        channel = getIntent().getBooleanExtra("private", false)
+                ? UserCache.getUser(this).getPersonality() : "ALL";
+
+        FirebaseObserveChat.observeMessage(channel, getResources(),
                 chatDoc -> {
+                    if (chatDoc == null) return;
                     viewModel.chatModels.clear();
                     viewModel.chatModels.addAll(chatDoc.getChatModels());
                     scrollToBottom();
@@ -54,7 +60,7 @@ public class ChatActivity extends AppCompatActivity {
 
         public void btnSendClick() {
             FirebaseSendChat.sendMessage(UserCache.getUser(ChatActivity.this),
-                    viewModel.message.getValue(), getResources(),
+                    viewModel.message.getValue(), channel, getResources(),
                     () -> {
 
                     },

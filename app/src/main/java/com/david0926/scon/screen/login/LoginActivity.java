@@ -45,6 +45,13 @@ public class LoginActivity extends AppCompatActivity {
 
             FirebaseLogin.login(viewModel.email.getValue(), viewModel.pw.getValue(), getResources(),
                     user -> {
+                        if (user.getPersonality() == null || user.getPersonality().isEmpty()) {
+                            dialog.finish(false);
+                            Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                            intent.putExtra("register_page", 2);
+                            startActivity(intent);
+                            return;
+                        }
                         UserCache.setUser(LoginActivity.this, user);
                         dialog.setMessage(getString(R.string.login_success)).setOnAnimationFinishListener(() -> {
                             startActivity(new Intent(LoginActivity.this, MainActivity.class));

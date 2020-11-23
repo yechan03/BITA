@@ -57,6 +57,7 @@ public class Register3Fragment extends Fragment {
 
         viewModel.profile.observe(getViewLifecycleOwner(), uri -> checkNextPageEnabled());
         viewModel.introduce.observe(getViewLifecycleOwner(), s -> checkNextPageEnabled());
+        viewModel.personality.observe(getViewLifecycleOwner(), s -> checkNextPageEnabled());
 
         return binding.getRoot();
     }
@@ -77,7 +78,8 @@ public class Register3Fragment extends Fragment {
     }
 
     private void checkNextPageEnabled() {
-        viewModel.isNextEnabled.setValue(!viewModel.introduce.getValue().isEmpty());
+        viewModel.isNextEnabled.setValue(!viewModel.introduce.getValue().isEmpty()
+                && !viewModel.personality.getValue().isEmpty());
     }
 
 

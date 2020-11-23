@@ -46,6 +46,7 @@
     <string name="error_image_upload_failed">이미지 업로드에 실패했습니다.</string>
     <string name="error_image_url_failed">이미지 주소를 가져오는 데 실패했습니다.</string>
     <string name="error_send_chat_failed">메시지 전송에 실패했습니다.</string>
+    <string name="error_observe_chat_failed">메시지 수신에 실패했습니다.</string>
 
     <string name="login_title">만나서 반가워요!</string>
     <string name="login_text">내 프로필로 로그인하고, 채팅을 시작해 보세요.</string>
@@ -81,7 +82,8 @@
     <string name="main_1_chat">채팅</string>
     <string name="main_1_title">채팅 시작하기</string>
     <string name="main_1_description">채팅방에 입장하고, \n다른 사용자들과 채팅을 시작해 보세요!</string>
-    <string name="main_1_enter">입장하기</string>
+    <string name="main_1_private">성격유형 채팅방</string>
+    <string name="main_1_public">전체 채팅방</string>
     <string name="main_2_profile">프로필</string>
     <string name="main_2_edit_profile">프로필 수정하기</string>
     <string name="main_3_class_name">SSF 2020 채팅 앱 만들기 클래스</string>
@@ -109,7 +111,8 @@
     <string name="reset_pw_description">회원가입시 사용한\n이메일을 입력해 주세요</string>
     <string name="reset_pw_title">비밀번호 재설정</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="register_personality">성격 유형</string>
+    <string name="personality_finish">검사 완료하기</string>
+    <string name="personality_test">성격유형 검사</string>
 
 </resources>

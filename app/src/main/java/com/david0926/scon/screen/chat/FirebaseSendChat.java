@@ -1,6 +1,7 @@
 package com.david0926.scon.screen.chat;
 
 import android.content.res.Resources;
+import android.util.Log;
 
 import com.david0926.scon.R;
 import com.david0926.scon.model.UserModel;
@@ -26,27 +27,30 @@ public class FirebaseSendChat {
         void onSendFailed(String errorMsg);
     }
 
-    public static void sendMessage(UserModel user, String msg, Resources res, OnSendSuccessListener s, OnSendFailedListener e) {
+    public static void sendMessage(UserModel user, String msg, String channel, Resources res, OnSendSuccessListener s, OnSendFailedListener e) {
         onSendSuccessListener = s;
         onSendFailedListener = e;
         mResources = res;
 
-        sendMessage(user, msg, s1 -> onSendSuccessListener.onSendSuccess());
+        sendMessage(user, msg, channel, s1 -> onSendSuccessListener.onSendSuccess());
     }
 
-    private static void sendMessage(UserModel user, String msg, OnSuccessListener<Void> s) {
+    private static void sendMessage(UserModel user, String msg, String channel, OnSuccessListener<Void> s) {
         FirebaseFirestore
                 .getInstance()
                 .collection("chat")
-                .document("ssf")
+                .document(channel)
                 .update("messages", FieldValue.arrayUnion(ChatModel.toMap(new ChatModel(user, msg, getTime()))))
                 .addOnSuccessListener(s)
-                .addOnFailureListener(e -> onSendFailedListener.onSendFailed(
-                        FirebaseErrorUtil.getErrorString(mResources, e, R.string.error_send_chat_failed)));
+                .addOnFailureListener(e -> {
+                    e.printStackTrace();
+                    onSendFailedListener.onSendFailed(
+                            FirebaseErrorUtil.getErrorString(mResources, e, R.string.error_send_chat_failed));
+                });
     }
 
     // TODO: replace with server time - cloud functions
-    private static String getTime(){
+    private static String getTime() {
         return new Date().toString();
     }
 }

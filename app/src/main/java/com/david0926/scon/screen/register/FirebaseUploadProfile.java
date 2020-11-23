@@ -30,7 +30,7 @@ public class FirebaseUploadProfile {
         void onUploadFailed(String errorMsg);
     }
 
-    public static void uploadProfile(Uri profile, String introduce, Resources res, OnUploadSuccessListener s, OnUploadFailedListener e) {
+    public static void uploadProfile(Uri profile, String introduce, String personality, Resources res, OnUploadSuccessListener s, OnUploadFailedListener e) {
         onUploadSuccessListener = s;
         onUploadFailedListener = e;
         mResources = res;
@@ -54,7 +54,7 @@ public class FirebaseUploadProfile {
 
         if (profile != null) {
             uploadProfile(email, profile,
-                    s1 -> updateUserInfo(email, s1.toString(), introduce,
+                    s1 -> updateUserInfo(email, s1.toString(), introduce, personality,
                             s2 -> onUploadSuccessListener.onUploadSuccess(s1.toString(), introduce)));
         } else {
             updateUserInfo(email, introduce, s1 -> onUploadSuccessListener.onUploadSuccess(null, introduce));
@@ -90,12 +90,12 @@ public class FirebaseUploadProfile {
                         FirebaseErrorUtil.getErrorString(mResources, e, R.string.error_image_url_failed)));
     }
 
-    private static void updateUserInfo(String email, String profile, String introduce, OnSuccessListener<Void> s) {
+    private static void updateUserInfo(String email, String profile, String introduce, String personality, OnSuccessListener<Void> s) {
         FirebaseFirestore
                 .getInstance()
                 .collection("users")
                 .document(email)
-                .update("introduce", introduce, "profile", profile)
+                .update("introduce", introduce, "profile", profile, "personality", personality)
                 .addOnSuccessListener(s)
                 .addOnFailureListener(e -> onUploadFailedListener.onUploadFailed(
                         FirebaseErrorUtil.getErrorString(mResources, e, mResources.getString(R.string.error_user_info_update_failed))));

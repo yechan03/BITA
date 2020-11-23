@@ -93,7 +93,8 @@ public class RegisterActivity extends AppCompatActivity {
         LoadingDialog dialog = new LoadingDialog(this);
         dialog.setMessage(getString(R.string.register_profile_uploading)).show();
 
-        FirebaseUploadProfile.uploadProfile(viewModel.profile.getValue(), viewModel.introduce.getValue(), getResources(),
+        FirebaseUploadProfile.uploadProfile(viewModel.profile.getValue(), viewModel.introduce.getValue(),
+                viewModel.personality.getValue(), getResources(),
                 (profile, introduce) -> {
                     dialog.setMessage(getString(R.string.register_profile_upload_success))
                             .setOnAnimationFinishListener(this::finishRegister)

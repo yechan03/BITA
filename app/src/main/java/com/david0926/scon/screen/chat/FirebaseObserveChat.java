@@ -21,7 +21,7 @@ public class FirebaseObserveChat {
         void onSnapshotFailed(String errorMsg);
     }
 
-    public static void observeMessage(Resources res, OnSnapshotListener s, OnSnapshotFailedListener e) {
+    public static void observeMessage(String channel, Resources res, OnSnapshotListener s, OnSnapshotFailedListener e) {
         onSnapshotListener = s;
         onSnapshotFailedListener = e;
         mResources = res;
@@ -29,12 +29,12 @@ public class FirebaseObserveChat {
         FirebaseFirestore
                 .getInstance()
                 .collection("chat")
-                .document("ssf")
+                .document(channel)
                 .addSnapshotListener((value, error) -> {
                     if (error != null || value == null) {
                         onSnapshotFailedListener.onSnapshotFailed(
                                 FirebaseErrorUtil.getErrorString(mResources,
-                                        error, R.string.error_send_chat_failed));
+                                        error, R.string.error_observe_chat_failed));
                         return;
                     }
                     onSnapshotListener.onSnapshot(value.toObject(ChatDocModel.class));

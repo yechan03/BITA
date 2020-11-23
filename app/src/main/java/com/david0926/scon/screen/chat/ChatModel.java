@@ -23,12 +23,13 @@ public class ChatModel {
     public ChatModel() {
     }
 
-    private String name, email, profile, message, time;
+    private String name, email, profile, personality, message, time;
 
     public ChatModel(UserModel user, String message, String time) {
         this.name = user.getName();
         this.email = user.getEmail();
         this.profile = user.getProfile();
+        this.personality = user.getPersonality();
         this.message = message;
         this.time = time;
     }
@@ -57,6 +58,14 @@ public class ChatModel {
         this.profile = profile;
     }
 
+    public String getPersonality() {
+        return personality;
+    }
+
+    public void setPersonality(String personality) {
+        this.personality = personality;
+    }
+
     public String getMessage() {
         return message;
     }
@@ -72,4 +81,6 @@ public class ChatModel {
     public void setTime(String time) {
         this.time = time;
     }
+
+
 }

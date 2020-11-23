@@ -44,6 +44,7 @@
     <string name="error_user_info_update_failed">Failed to update user data.</string>
     <string name="error_image_upload_failed">Failed to upload image.</string>
     <string name="error_image_url_failed">Failed to get image address.</string>
+    <string name="error_observe_chat_failed">Failed to receive chat message.</string>
 
     <string name="login_title">Hi there!</string>
     <string name="login_text">Sign in, and go forth to chat!</string>
@@ -82,7 +83,8 @@
     <string name="main_1_chat">Chat</string>
     <string name="main_1_title">Start Chatting</string>
     <string name="main_1_description">Join channel, \nstart chatting with others!</string>
-    <string name="main_1_enter">Join Channel</string>
+    <string name="main_1_private">Join Private Channel</string>
+    <string name="main_1_public">Join Public Channel</string>
     <string name="main_2_profile">Profile</string>
     <string name="main_2_edit_profile">Edit profile</string>
     <string name="main_3_class_name">SSF 2020 Chat App Class</string>
@@ -104,5 +106,8 @@
     <string name="reset_pw_send">Send reset email</string>
     <string name="reset_pw_description">Enter your email \nyou used at registration</string>
     <string name="reset_pw_title">Reset password</string>
+    <string name="register_personality">Personality</string>
+    <string name="personality_finish">Finish Test</string>
+    <string name="personality_test">Personality Test</string>
 
 </resources>

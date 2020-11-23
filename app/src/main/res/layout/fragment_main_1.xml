@@ -75,25 +75,42 @@
             android:text="@string/main_1_description"
             android:textAlignment="center"
             android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@id/btn_main_1_enter"
+            app:layout_constraintBottom_toTopOf="@id/btn_main_1_private"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
         <Button
-            android:id="@+id/btn_main_1_enter"
+            android:id="@+id/btn_main_1_private"
             style="@style/ButtonStyleColored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="28dp"
-            android:onClick="@{()->clickHandler.btnEnterClick()}"
-            android:text="@string/main_1_enter"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="28dp"
+            android:onClick="@{()->clickHandler.btnPrivateClick()}"
+            android:text="@string/main_1_private"
+            app:layout_constraintBottom_toTopOf="@id/btn_main_1_public"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <Button
+            android:id="@+id/btn_main_1_public"
+            style="@style/ButtonStyleColorless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="28dp"
+            android:onClick="@{()->clickHandler.btnPublicClick()}"
+            android:text="@string/main_1_public"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_main_1_private" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

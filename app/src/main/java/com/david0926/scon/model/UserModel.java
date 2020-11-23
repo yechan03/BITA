@@ -22,7 +22,7 @@ public class UserModel {
     public UserModel() {
     }
 
-    private String name, email, time, profile, introduce;
+    private String name, email, time, profile, introduce, personality;
 
     public UserModel(String name, String email, String profile) {
         this.name = name;
@@ -30,14 +30,16 @@ public class UserModel {
         this.profile = profile;
         time = "";
         introduce = "";
+        personality = "";
     }
 
-    public UserModel(String name, String email, String time, String profile, String introduce) {
+    public UserModel(String name, String email, String time, String profile, String introduce, String personality) {
         this.name = name;
         this.email = email;
         this.time = time;
         this.profile = profile;
         this.introduce = introduce;
+        this.personality = personality;
     }
 
     public String getName() {
@@ -78,5 +80,13 @@ public class UserModel {
 
     public void setIntroduce(String introduce) {
         this.introduce = introduce;
+    }
+
+    public String getPersonality() {
+        return personality;
+    }
+
+    public void setPersonality(String personality) {
+        this.personality = personality;
     }
 }

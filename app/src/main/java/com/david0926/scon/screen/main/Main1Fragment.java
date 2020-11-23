@@ -11,9 +11,9 @@ import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
-import com.david0926.scon.screen.chat.ChatActivity;
 import com.david0926.scon.R;
 import com.david0926.scon.databinding.FragmentMain1Binding;
+import com.david0926.scon.screen.chat.ChatActivity;
 
 public class Main1Fragment extends Fragment {
 
@@ -33,9 +33,17 @@ public class Main1Fragment extends Fragment {
         return binding.getRoot();
     }
 
-    public class Main1FragmentClickHandler{
-        public void btnEnterClick(){
-            startActivity(new Intent(requireContext(), ChatActivity.class));
+    public class Main1FragmentClickHandler {
+        public void btnPrivateClick() {
+            Intent intent = new Intent(requireContext(), ChatActivity.class);
+            intent.putExtra("private", true);
+            startActivity(intent);
+        }
+
+        public void btnPublicClick() {
+            Intent intent = new Intent(requireContext(), ChatActivity.class);
+            intent.putExtra("public", true);
+            startActivity(intent);
         }
     }
 

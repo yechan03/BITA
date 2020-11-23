@@ -57,7 +57,8 @@ public class EditProfileActivity extends AppCompatActivity {
             LoadingDialog dialog = new LoadingDialog(EditProfileActivity.this);
             dialog.setMessage(getString(R.string.register_profile_uploading)).show();
 
-            FirebaseUploadProfile.uploadProfile(viewModel.profile.getValue(), viewModel.introduce.getValue(), getResources(),
+            FirebaseUploadProfile.uploadProfile(viewModel.profile.getValue(), viewModel.introduce.getValue(),
+                    mUser.getPersonality(), getResources(),
                     (profile, introduce) -> {
                         if (profile != null) mUser.setProfile(profile);
                         mUser.setIntroduce(introduce);

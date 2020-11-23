@@ -13,23 +13,21 @@ import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.david0926.scon.R;
-import com.david0926.scon.databinding.ActivityPersonalityTestBinding;
+import com.david0926.scon.databinding.ActivityPersonalityBinding;
 
 public class PersonalityActivity extends AppCompatActivity {
 
-    private ActivityPersonalityTestBinding binding;
+    private ActivityPersonalityBinding binding;
     private WebSettings webSettings;
 
     private PersonalityActivityViewModel viewModel;
 
-    //MBTI URL
     private final static String MBTI_URL = "https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC";
-    //private final static String MBTI_URL = "https://www.16personalities.com/ko/성격유형-isfp";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_personality_test);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_personality);
         binding.setLifecycleOwner(this);
 
         viewModel = new ViewModelProvider(this).get(PersonalityActivityViewModel.class);
