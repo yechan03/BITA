@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NanumFest2020.iml" filepath="$PROJECT_DIR$/.idea/modules/NanumFest2020.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NanumFest2020.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NanumFest2020.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BITA.iml" filepath="$PROJECT_DIR$/.idea/modules/BITA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BITA.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BITA.app.iml" />
     </modules>
   </component>
 </project>

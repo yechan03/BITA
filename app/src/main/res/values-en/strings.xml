@@ -107,5 +107,7 @@
     <string name="register_personality">Personality</string>
     <string name="personality_finish">Finish Test</string>
     <string name="personality_test">Personality Test</string>
+    <string name="main2_my_personality">My Personality</string>
+    <string name="main2_my_personality_text">This is your personality</string>
 
 </resources>

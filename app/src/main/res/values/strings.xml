@@ -113,5 +113,7 @@
     <string name="register_personality">성격 유형</string>
     <string name="personality_finish">검사 완료하기</string>
     <string name="personality_test">성격유형 검사</string>
+    <string name="main2_my_personality">나의 성격유형</string>
+    <string name="main2_my_personality_text">나의 성격유형은 다음과 같아요!</string>
 
 </resources>
