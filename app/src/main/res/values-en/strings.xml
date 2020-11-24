@@ -1,11 +1,9 @@
 <resources>
     <string name="app_name">BITA</string>
 
-    <string name="splash_phrase">2020 SSF chat app develop class</string>
-
     <string name="on_board_1_title">No contact,</string>
     <string name="on_board_1_sub">Use your chat app</string>
-    <string name="on_board_1_text">With Sunrin 2020 SSF,
+    <string name="on_board_1_text">With BITA,
         \nLet\'s make real-time chatting app!</string>
 
     <string name="on_board_2_title">Step One</string>
@@ -22,7 +20,7 @@
 
     <string name="on_board_4_title">So then,</string>
     <string name="on_board_4_sub">Ready to develop?</string>
-    <string name="on_board_4_text">2020 SSF ✕ EDCAN
+    <string name="on_board_4_text">BITA ✕ Smart Contents
         \nChat app class, Let\'s get started!</string>
 
     <string name="on_board_skip">Skip</string>
@@ -87,9 +85,9 @@
     <string name="main_1_public">Join Public Channel</string>
     <string name="main_2_profile">Profile</string>
     <string name="main_2_edit_profile">Edit profile</string>
-    <string name="main_3_class_name">SSF 2020 Chat App Class</string>
+    <string name="main_3_class_name">BITA</string>
     <string name="main_3_dev_info">Developer info</string>
-    <string name="main_3_club_info">About our club</string>
+    <string name="main_3_club_info">About our service</string>
     <string name="main_3_license">Open source license</string>
     <string name="main_3_logout">Logout</string>
     <string name="main_3_more">More</string>

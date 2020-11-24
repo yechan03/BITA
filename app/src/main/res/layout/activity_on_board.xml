@@ -30,10 +30,10 @@
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="107dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="34dp"
-                android:src="@drawable/app_icon_typo"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="24dp"
+                android:src="@drawable/app_icon"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/textView10"
                 app:layout_constraintHorizontal_bias="0.0"

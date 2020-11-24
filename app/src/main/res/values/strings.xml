@@ -3,28 +3,27 @@
 
     <string name="profile_placeholder" translatable="false">https://raw.githubusercontent.com/roian6/NanumFest2020/master/app/src/main/res/drawable/profile_placeholder.jpg</string>
 
-    <string name="splash_phrase">2020 나눔축제 채팅 앱 만들기 클래스</string>
-    <string name="splash_copyright" translatable="false">© 2020. EDCAN. all rights reserved.</string>
+    <string name="splash_copyright" translatable="false">© 2020. Smart Contents Team 6.</string>
 
     <string name="on_board_1_title">언택트 시대,</string>
     <string name="on_board_1_sub">채팅으로 소통하세요</string>
-    <string name="on_board_1_text">선린인터넷고등학교 나눔축제와 함께,
-        \n실시간으로 소통할 수 있는 채팅 앱을 만들어봐요!</string>
+    <string name="on_board_1_text">BITA와 함께,
+        \n나와 같은 성격유형과 소통해 보세요!</string>
 
-    <string name="on_board_2_title">첫번째 단계</string>
-    <string name="on_board_2_sub">로그인 &amp; 회원가입</string>
-    <string name="on_board_2_text">Firebase Authentication을 사용하여
-        \n온라인 로그인 및 회원가입 기능을 제작해 봅니다.</string>
+    <string name="on_board_2_title">첫번째 기능</string>
+    <string name="on_board_2_sub">성격유형 기반 SNS</string>
+    <string name="on_board_2_text">나의 성격유형을 표현하고,
+        \n다양한 성격 유형의 사람들과 이야기해 보세요.</string>
 
-    <string name="on_board_3_title">두번째 단계</string>
-    <string name="on_board_3_sub">실시간 채팅하기</string>
-    <string name="on_board_3_text">Cloud Firestore와 Storage를 사용하여
-        \n실시간 단체 채팅 기능을 제작해 봅니다.</string>
+    <string name="on_board_3_title">두번째 기능</string>
+    <string name="on_board_3_sub">실시간 채팅</string>
+    <string name="on_board_3_text">나와 같은 성격유형, 모든 성격유형으로
+        \n나누어진 단체 채팅을 경험해보세요.</string>
 
     <string name="on_board_4_title">그럼 이제,</string>
     <string name="on_board_4_sub">시작해 볼까요?</string>
-    <string name="on_board_4_text">2020 나눔축제 ✕ EDCAN과 함께하는
-        \n나만의 채팅 앱 만들기 클래스, 지금 시작합니다!</string>
+    <string name="on_board_4_text">BITA와 함께하는
+        \n차세대 성격유형 커뮤니티, 지금 시작합니다!</string>
 
     <string name="on_board_skip">건너뛰기</string>
     <string name="on_board_start">시작하기</string>
@@ -86,9 +85,9 @@
     <string name="main_1_public">전체 채팅방</string>
     <string name="main_2_profile">프로필</string>
     <string name="main_2_edit_profile">프로필 수정하기</string>
-    <string name="main_3_class_name">SSF 2020 채팅 앱 만들기 클래스</string>
+    <string name="main_3_class_name">BITA</string>
     <string name="main_3_dev_info">개발자 정보</string>
-    <string name="main_3_club_info">동아리 소개</string>
+    <string name="main_3_club_info">서비스 소개</string>
     <string name="main_3_license">오픈소스 라이선스</string>
     <string name="main_3_logout">로그아웃</string>
     <string name="main_3_more">더보기</string>
@@ -98,9 +97,9 @@
     <string name="chat_message_hint" translatable="false">Aa</string>
     <string name="chat_title">채팅</string>
 
-    <string name="url_dev_info" translatable="false">https://github.com/roian6</string>
-    <string name="url_edcan" translatable="false">https://edcan.kr</string>
-    <string name="url_github" translatable="false">https://github.com/roian6/nanumfest2020</string>
+    <string name="url_dev_info" translatable="false">https://github.com/yechan03/bita</string>
+    <string name="url_edcan" translatable="false">https://github.com/yechan03/bita</string>
+    <string name="url_github" translatable="false">https://github.com/yechan03/bita</string>
 
     <string name="edit_profile_complete">프로필 수정 완료!</string>
     <string name="edit_profile_title">프로필 수정</string>
